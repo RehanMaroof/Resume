@@ -10,16 +10,73 @@ import avatar from './images/2.jpg';
 import './Resume.css'
 
 export default function Resume() {
+
+    const firstName = "Mubashir"
+    const lastName = "AhMed"
+    const jobTitle = "Computer Scientist" // Headline 
+    const email = "i180481@nu.edu.pk"
+    const phoneNo = "+92-317-5384929"
+    const address = "House No. 1005, Street 56, G-11/3 Islamabad, 44000, Pakistan"
+    const links = [
+        ["GitHub", "https://github.com/mubashirmalik"],
+        ["LinkedIn", "https://linkedin.com/in/mubashir0/"]    
+    ]
+    const skills = ["Golang", "C++", "Solidity", "PHP", "ReactJS", "Git & GitHub"]
+    const interests = ["Dota", "Cricket", "Web3"]
+    
+    const displayLinks = links.map((val, idx) => {
+        return (
+            <div className="Item">   
+                <div className="Item-left">
+                    <div className="Circle-bullet">
+                        <div className="Inner-circle"></div>
+                    </div>
+                    <StyledLine height="30.2188px" marginLeft="6.1px" />
+                </div>
+                <div className="Item-right">
+                    <span>{val[0]}</span>
+                    <a target="_blank" rel="noreferrer" href={val[1]}>{val[1]}</a>
+                </div>
+            </div>
+        );
+    });
+
+    const displayInterests = interests.map((val) => {
+        return (<div className="Item">   
+            <div className="Item-left">
+                <div className="Circle-bullet">
+                    <div className="Inner-circle"></div>
+                </div>
+            </div>
+            <div className="Item-right">
+                <span>{val}</span>
+            </div>
+        </div>);
+    });
+    const displaySkills = skills.map((val) => {
+        return (<div className="Item">   
+            <div className="Item-left">
+                <div className="Circle-bullet">
+                    <div className="Inner-circle"></div>
+                </div>
+            </div>
+            <div className="Item-right">
+                <span>{val}</span>
+            </div>
+        </div>);
+    });
+
+
     return(
         <div className="Resume">
             <StyledLine height="62px" />
             <div className="Resume-header">
                 <div className="Bio">
-                    <div className="First-name">Mubashir</div>
-                    <div className="Last-name">Ahmed</div>
+                    <div className="First-name">{firstName}</div>
+                    <div className="Last-name">{lastName}</div>
                     <div className="Job-title">
                         <div className="Circle-filled"></div>
-                        <div>Computer Scientist</div>
+                        <div>{jobTitle}</div>
                     </div>
                 </div>
                 <div className="Avatar">
@@ -32,15 +89,15 @@ export default function Resume() {
                     <div className="Contact-details">
                         <div>
                             <FmdGoodIcon fontSize="small" sx={{ color: "#3e3e3e" }} />
-                            <span>House No. 1005, Street 56, G-11/3 Islamabad, 44000, Pakistan</span>
+                            <span>{address}</span>
                         </div>
                         <div>
                             <PhoneIcon fontSize="small"  sx={{ color: "#3e3e3e" }}/>
-                            <span>+92-317-5384929</span>
+                            <span>{phoneNo}</span>
                         </div>
                         <div>
                             <MailIcon fontSize="small" sx={{ color: "#3e3e3e" }}/>
-                            <span>i180481@nu.edu.pk</span>
+                            <span>{email}</span>
                         </div>
                     </div>
                     <div className="Education">
@@ -75,30 +132,15 @@ export default function Resume() {
                     </div>
                     <div className="Links">
                         <div className="Heading">Links</div>
-                        <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="30.2188px" marginLeft="6.1px" />
-                            </div>
-                            <div className="Item-right">
-                                <span>GitHub</span>
-                                <a href="https://github.com/mubashirmalik">https://github.com/mubashirmalik</a>
-                            </div>
-                        </div>
-                        <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="30.2188px" marginLeft="6.1px" />
-                            </div>
-                            <div className="Item-right">
-                                <span>LinkedIn</span>
-                                <a href="https://linkedin.com/in/mubashir0/">https://linkedin.com/in/mubashir0/</a>
-                            </div>
-                        </div>
+                        {displayLinks}           
+                    </div>
+                    <div className="Skills">
+                        <div className="Heading">Skills</div>
+                        {displaySkills}
+                    </div>
+                    <div className="Interests">
+                        <div className="Heading">Interests</div>
+                        {displayInterests}
                     </div>
                 </div>
                 <div className="Right-side">
@@ -138,11 +180,11 @@ export default function Resume() {
                                     </div>
                                 </div>
                                 <div className="Item-desc">
-                                <ul>
-                                    <li>Made various Web Applications & Custom Scripts using ReactJS, HTML5, CSS3, Python & C++.</li>
-                                    <li>Successfully completed 50+ projects.</li>
-                                    <li>Verify: <a href="https://www.freelancer.pk/u/mubashirmalick">mubashirmalick</a></li>
-                                </ul>
+                                    <ul>
+                                        <li>Made various Web Applications & Custom Scripts using ReactJS, HTML5, CSS3, Python & C++.</li>
+                                        <li>Successfully completed 50+ projects.</li>
+                                        <li>Verify: <a href="https://www.freelancer.pk/u/mubashirmalick">mubashirmalick</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -235,23 +277,24 @@ export default function Resume() {
                                 <div className="Circle-bullet">
                                     <div className="Inner-circle"></div>
                                 </div>
-                                <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
+                                <StyledLine height="117.094px" marginLeft="6.1px" width="1px" />
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
                                     <div style={{display: "flex"}}>
-                                    P2CHDWallet (FYP)&nbsp;
+                                    P2CHDWallet (R&D)&nbsp;
                                     <div className="Item-date" style={{marginLeft: "5px"}}>
                                             AUG 2021 - JUN 2022
                                         </div>
                                     </div>
                                     <div className="Item-sub-heading Work-company">
-                                        Final Year Project
+                                        Ethereum, ReactJS, Node, Infura
                                     </div>
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
+                                        <li>A Hierarchical Deterministic (HD) Ethereum wallet based on electrum protocol for Bitcoin.</li>
+                                        <li>GitHub Repo: <a href="https://github.com/MubashirMalik/F21-40-R-HDWallet">https://github.com/MubashirMalik/F21-40-R-HDWallet</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -261,23 +304,27 @@ export default function Resume() {
                                 <div className="Circle-bullet">
                                     <div className="Inner-circle"></div>
                                 </div>
-                                <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
+                                <StyledLine height="177.094px" marginLeft="6.1px" width="1px" />
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
                                     <div style={{display: "flex"}}>
-                                    Learn How To Code: Google's Go (golang) Programming Language&nbsp;
+                                    Smart Shares&nbsp;
                                         <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            JUN 2022
+                                            DEC 2021
                                         </div>
                                     </div>
                                     <div className="Item-sub-heading Work-company">
-                                        Udemy
+                                        Solidity, ReactJS, NodeJS, Ganache, Truffle, MetaMask
                                     </div>
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
+                                        <li>
+                                            DApp that allows buying and selling shares of Assets using Smart Contract. An asset can be any thing; from a company shares, a car to a NFT.
+                                        </li>
+                                        <li>Ensures shares being sold and bought are the actual shares on the chain and not fraud by dealers. Gas fee for buying shares is lower as compared to the real life cut of dealers along with ease of use and anonymity.
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -287,23 +334,24 @@ export default function Resume() {
                                 <div className="Circle-bullet">
                                     <div className="Inner-circle"></div>
                                 </div>
-                                <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
+                                <StyledLine height="122.094px" marginLeft="6.1px" width="1px" />
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
                                     <div style={{display: "flex"}}>
-                                    Introduction to DevOps&nbsp;
+                                    NetArchives&nbsp;
                                         <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            APR 2022
+                                            JUN 2019 - FEB 2022
                                         </div>
                                     </div>
                                     <div className="Item-sub-heading Work-company">
-                                        Coursera, IBM
+                                        HTML5, CSS3, JavaScript, PHP, MYSQL, GSC
                                     </div>
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F">LYZ7CECXR48F</a></li>
+                                        <li>An educational website aiming to help students prepare for their entry tests and descriptive exams for various admissions in reputable institutes.</li>
+                                        <li>Ranked No.1 on Google for various search terms.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -312,6 +360,5 @@ export default function Resume() {
                 </div>
             </div>    
         </div>
-        
     );
 }
