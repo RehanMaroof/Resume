@@ -170,7 +170,7 @@ export default function Resume() {
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>Verify using Credential ID: UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</li>
+                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -196,7 +196,88 @@ export default function Resume() {
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>Verify using Credential ID: UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</li>
+                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Item">   
+                            <div className="Item-left">
+                                <div className="Circle-bullet">
+                                    <div className="Inner-circle"></div>
+                                </div>
+                                <StyledLine height="67.094px" marginLeft="6.1px" width="1px" />
+                            </div>
+                            <div className="Item-right">
+                                <div className="Item-heading">
+                                    <div style={{display: "flex"}}>
+                                    Introduction to DevOps&nbsp;
+                                        <div className="Item-date" style={{marginLeft: "5px"}}>
+                                            APR 2022
+                                        </div>
+                                    </div>
+                                    <div className="Item-sub-heading Work-company">
+                                        Coursera, IBM
+                                    </div>
+                                </div>
+                                <div className="Item-desc">
+                                    <ul>
+                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F">LYZ7CECXR48F</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Projects">
+                        <div className="Heading">PERSONAL PROJECTS</div>
+                        <div className="Item">   
+                            <div className="Item-left">
+                                <div className="Circle-bullet">
+                                    <div className="Inner-circle"></div>
+                                </div>
+                                <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
+                            </div>
+                            <div className="Item-right">
+                                <div className="Item-heading">
+                                    <div style={{display: "flex"}}>
+                                    P2CHDWallet (FYP)&nbsp;
+                                    <div className="Item-date" style={{marginLeft: "5px"}}>
+                                            AUG 2021 - JUN 2022
+                                        </div>
+                                    </div>
+                                    <div className="Item-sub-heading Work-company">
+                                        Final Year Project
+                                    </div>
+                                </div>
+                                <div className="Item-desc">
+                                    <ul>
+                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Item">   
+                            <div className="Item-left">
+                                <div className="Circle-bullet">
+                                    <div className="Inner-circle"></div>
+                                </div>
+                                <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
+                            </div>
+                            <div className="Item-right">
+                                <div className="Item-heading">
+                                    <div style={{display: "flex"}}>
+                                    Learn How To Code: Google's Go (golang) Programming Language&nbsp;
+                                        <div className="Item-date" style={{marginLeft: "5px"}}>
+                                            JUN 2022
+                                        </div>
+                                    </div>
+                                    <div className="Item-sub-heading Work-company">
+                                        Udemy
+                                    </div>
+                                </div>
+                                <div className="Item-desc">
+                                    <ul>
+                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -222,7 +303,7 @@ export default function Resume() {
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>Verify using Credential ID: LYZ7CECXR48F</li>
+                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F">LYZ7CECXR48F</a></li>
                                     </ul>
                                 </div>
                             </div>
