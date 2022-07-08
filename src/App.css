@@ -1,0 +1,14 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: rgb(229, 228, 234);
+  font-family: Raleway;
+}
+
+.App {
+  padding: 20px 32.1725px;
+}
