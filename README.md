@@ -23,3 +23,13 @@ const email = "i180481@nu.edu.pk"
 const skills = ["Golang", "C++", "Solidity", "PHP", "ReactJS", "Git & GitHub"]
 const interests = ["Dota", "Cricket", "Web3"]
 ```
+
+* Don't forget to change your url in package.json before you deploy your site!
+```
+"homepage": "http://mubashirmalik.github.io/Resume"
+```
+
+* Run following command to build & deploy
+```
+npm run deploy
+```

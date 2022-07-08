@@ -200,11 +200,9 @@ export default function Resume() {
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
-                                    <div style={{display: "flex"}}>
+                                    <div className="Item-heading-div">
                                     Web Development w/ Google’s Go (golang) Programming Language&nbsp;
-                                    <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            JUL 2022
-                                        </div>
+                                    <div className="Item-date" style={{marginLeft: "5px"}}>JUL 2022</div>
                                     </div>
                                     <div className="Item-sub-heading Work-company">
                                         Udemy
@@ -226,7 +224,7 @@ export default function Resume() {
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
-                                    <div style={{display: "flex"}}>
+                                    <div class="Item-heading-div">
                                     Learn How To Code: Google's Go (golang) Programming Language&nbsp;
                                         <div className="Item-date" style={{marginLeft: "5px"}}>
                                             JUN 2022
@@ -252,8 +250,8 @@ export default function Resume() {
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
-                                    <div style={{display: "flex"}}>
-                                    Introduction to DevOps&nbsp;
+                                    <div className="Item-heading-div">
+                                        Introduction to DevOps&nbsp;
                                         <div className="Item-date" style={{marginLeft: "5px"}}>
                                             APR 2022
                                         </div>
@@ -281,7 +279,7 @@ export default function Resume() {
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
-                                    <div style={{display: "flex"}}>
+                                    <div className="Item-heading-div">
                                     P2CHDWallet (R&D)&nbsp;
                                     <div className="Item-date" style={{marginLeft: "5px"}}>
                                             AUG 2021 - JUN 2022
@@ -308,7 +306,7 @@ export default function Resume() {
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
-                                    <div style={{display: "flex"}}>
+                                    <div className="Item-heading-div">
                                     Smart Shares&nbsp;
                                         <div className="Item-date" style={{marginLeft: "5px"}}>
                                             DEC 2021
@@ -338,7 +336,7 @@ export default function Resume() {
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
-                                    <div style={{display: "flex"}}>
+                                    <div className="Item-heading-div">
                                     NetArchives&nbsp;
                                         <div className="Item-date" style={{marginLeft: "5px"}}>
                                             JUN 2019 - FEB 2022

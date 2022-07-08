@@ -147,6 +147,7 @@
 .Item-right {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .Item-right span {
@@ -167,6 +168,8 @@
 }
 
 .Item-heading {
+    display: flex;
+    flex-direction: column;
     font-weight: 700;
     font-size: 11.6877px;
     text-transform: uppercase;
@@ -174,6 +177,11 @@
     line-height: 16.3627px;
     letter-spacing: 2.33753px;
     margin-bottom: 5px;
+}
+
+.Item-heading-div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .Item-sub-heading {
