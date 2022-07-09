@@ -62,7 +62,7 @@ export default function Resume() {
     // If you want to include more than one degree, you can remove courses section to create space
     const education = [{
         degree: "BACHELOR OF SCIENCE",
-        university: "NATIONAL UNIVERSITY OF COMPUTER & EMGERING SCIENCES, ISLAMABAD",
+        university: "NATIONAL UNIVERSITY OF COMPUTER & EMERGING SCIENCES, ISLAMABAD",
         year: "2022",
         courses: ["Blockchain & Cryptocurrencies", "Web Programming", "Cryptography & Data Security", "Parallel & Distributed Computing","Data Mining", "Ethical Hacking Concepts & Practices", "Fundamentals of Malware Analysis"
         ]
