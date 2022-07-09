@@ -23,7 +23,135 @@ export default function Resume() {
     ]
     const skills = ["Golang", "C++", "Solidity", "PHP", "ReactJS", "Git & GitHub"]
     const interests = ["Dota", "Cricket", "Web3"]
+    const summary = "I am a fast learner and driven individual with the ability to adapt to any situation. I have extensive experience in Web development. I am currently working in Blockchain technology."// About me 
+    const workExperience = [{
+        jobTitle: "SOFTWARE ENGINEER",
+        duration: "APR 2020 - FEB 2021",
+        company: "Freelancer",
+        description: [
+            "Made various Web Applications & Custom Scripts using ReactJS, HTML5, CSS3, Python & C++.",
+            "Successfully completed 50+ projects.",
+        ],
+        proof: {
+            flag: 1, // set 0 if you have no link to redirect to
+            text: "mubashirmalick",
+            link: "https://www.freelancer.pk/u/mubashirmalick"
+        }
+    }]
+    const certifications = [{
+        title: "WEB DEVELOPMENT W/ GOOGLE’S GO (GOLANG) PROGRAMMING LANGUAGE",
+        duration: "JUL 2022",
+        orgranization: "Udemy",
+        credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
+        verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
+    },
+    {
+        title: "LEARN HOW TO CODE: GOOGLE'S GO (GOLANG) PROGRAMMING LANGUAGE",
+        duration: "JUN 2022",
+        orgranization: "Udemy",
+        credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
+        verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
+    },
+    {
+        title: "INTRODUCTION TO DEVOPS",
+        duration: "APR 2022",
+        orgranization: "Coursera, IBM",
+        credentialID: "LYZ7CECXR48F",
+        verificationLink: "https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F",
+    }]
+    // If you want to include more than one degree, you can remove courses section to create space
+    const education = [{
+        degree: "BACHELOR OF SCIENCE",
+        university: "NATIONAL UNIVERSITY OF COMPUTER & EMGERING SCIENCES, ISLAMABAD",
+        year: "2022",
+        courses: ["Blockchain & Cryptocurrencies", "Web Programming", "Cryptography & Data Security", "Parallel & Distributed Computing","Data Mining", "Ethical Hacking Concepts & Practices", "Fundamentals of Malware Analysis"
+        ]
+    }]
     
+    const displayEducation = education.map((val) => {
+        const displayCourses = val.courses.map((course) => <li>{course}</li>);
+        return(
+            <div className="Item">   
+                <div className="Item-left">
+                    <div className="Circle-bullet">
+                        <div className="Inner-circle"></div>
+                    </div>
+                    <StyledLine height="441.094px" marginLeft="6.1px" />
+                </div>
+                <div className="Item-right">
+                    <div className="Item-heading">{ val.degree }
+                        <div className="Item-sub-heading">{ val.university }
+                        </div>
+                        <div className="Item-date">{ val.year }</div>
+                    </div>
+                    <div className="Item-desc">
+                        Courses:<ul>{ displayCourses }</ul>
+                    </div>
+                </div>
+            </div>
+        );
+    });
+    const displayCertifications = certifications.map((val) => {
+        return(
+            <div className="Item">   
+                <div className="Item-left">
+                    <div className="Circle-bullet">
+                        <div className="Inner-circle"></div>
+                    </div>
+                    <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
+                </div>
+                <div className="Item-right">
+                    <div className="Item-heading">
+                        <div className="Item-heading-div">{val.title}&nbsp;
+                        <div className="Item-date" style={{marginLeft: "5px"}}>{val.duration}</div>
+                        </div>
+                        <div className="Item-sub-heading Work-company">{ val.orgranization }</div>
+                    </div>
+                    <div className="Item-desc">
+                        <ul>
+                            <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href={val.verificationLink }>{val.credentialID}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        );
+    });
+    const displayWorkExperience = workExperience.map((val) => {
+
+        const displayWorkDescription = val.description.map((desc) => {
+            return(
+                <li>{ desc }</li>
+            );
+        });
+
+        return(
+            <div className="Item">   
+                <div className="Item-left">
+                    <div className="Circle-bullet">
+                        <div className="Inner-circle"></div>
+                    </div>
+                    <StyledLine height="143.094px" marginLeft="6.1px" width="1px" />
+                </div>
+                <div className="Item-right">
+                    <div className="Item-heading">
+                        <div className="Item-heading-div">{val.jobTitle}
+                            <div className="Item-date">{val.duration}</div>
+                        </div>
+                        <div className="Item-sub-heading Work-company">{val.company}</div>
+                    </div>
+                    <div className="Item-desc">
+                        <ul>    
+                            {displayWorkDescription}
+                            { val.proof.flag !== 0 ? 
+                                <li>Verify at: <a href={ val.proof.link }>{ val.proof.text }</a></li> : null
+                            }
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        );
+    });
     const displayLinks = links.map((val, idx) => {
         return (
             <div className="Item">   
@@ -40,7 +168,6 @@ export default function Resume() {
             </div>
         );
     });
-
     const displayInterests = interests.map((val) => {
         return (<div className="Item">   
             <div className="Item-left">
@@ -65,7 +192,6 @@ export default function Resume() {
             </div>
         </div>);
     });
-
 
     return(
         <div className="Resume">
@@ -102,33 +228,7 @@ export default function Resume() {
                     </div>
                     <div className="Education">
                         <div className="Heading">Education</div>
-                        <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="441.094px" marginLeft="6.1px" />
-                            </div>
-                            <div className="Item-right">
-                                <div className="Item-heading">BACHELOR OF SCIENCE
-                                    <div className="Item-sub-heading">National University of Computer & Emgering Sciences, Islamabad
-                                    </div>
-                                    <div className="Item-date">2022</div>
-                                </div>
-                                <div className="Item-desc">
-                                Courses:
-                                <ul>
-                                    <li>Blockchain & Cryptocurrencies</li>
-                                    <li>Web Programming</li>
-                                    <li>Cryptography & Data Security</li>
-                                    <li>Parallel & Distributed Computing</li>
-                                    <li>Data Mining</li>
-                                    <li>Ethical Hacking Concepts & Practices</li>
-                                    <li>Fundamentals of Malware Analysis</li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
+                        { displayEducation }
                     </div>
                     <div className="Links">
                         <div className="Heading">Links</div>
@@ -154,119 +254,17 @@ export default function Resume() {
                                 <StyledLine height="29.2188px" marginLeft="6.1px" width="1px" />
                             </div>
                             <div className="Item-right">
-                                <div className="Pro-summary">I am a fast learner and driven individual with the ability to adapt to any situation. I have extensive experience in Web development. I am currently working in Blockchain technology.</div>
+                                <div className="Pro-summary">{ summary }</div>
                             </div>
                         </div>
                     </div>
                     <div className="Experience">
                         <div className="Heading">WORK experience</div>
-                         <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="143.094px" marginLeft="6.1px" width="1px" />
-                            </div>
-                            <div className="Item-right">
-                                <div className="Item-heading">
-                                    <div style={{display: "flex"}}>
-                                        Software Engineer&nbsp;
-                                        <div className="Item-date">
-                                            | APR 2020 - FEB 2021
-                                        </div>
-                                    </div>
-                                    <div className="Item-sub-heading Work-company">
-                                        Freelancer
-                                    </div>
-                                </div>
-                                <div className="Item-desc">
-                                    <ul>
-                                        <li>Made various Web Applications & Custom Scripts using ReactJS, HTML5, CSS3, Python & C++.</li>
-                                        <li>Successfully completed 50+ projects.</li>
-                                        <li>Verify: <a href="https://www.freelancer.pk/u/mubashirmalick">mubashirmalick</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        { displayWorkExperience }
                     </div>
                     <div className="Certifications">
                         <div className="Heading">Certifications</div>
-                        <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
-                            </div>
-                            <div className="Item-right">
-                                <div className="Item-heading">
-                                    <div className="Item-heading-div">
-                                    Web Development w/ Google’s Go (golang) Programming Language&nbsp;
-                                    <div className="Item-date" style={{marginLeft: "5px"}}>JUL 2022</div>
-                                    </div>
-                                    <div className="Item-sub-heading Work-company">
-                                        Udemy
-                                    </div>
-                                </div>
-                                <div className="Item-desc">
-                                    <ul>
-                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
-                            </div>
-                            <div className="Item-right">
-                                <div className="Item-heading">
-                                    <div class="Item-heading-div">
-                                    Learn How To Code: Google's Go (golang) Programming Language&nbsp;
-                                        <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            JUN 2022
-                                        </div>
-                                    </div>
-                                    <div className="Item-sub-heading Work-company">
-                                        Udemy
-                                    </div>
-                                </div>
-                                <div className="Item-desc">
-                                    <ul>
-                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/">UC-15104a74-9b45-4422-b3dd-40e0fa9c6433</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="67.094px" marginLeft="6.1px" width="1px" />
-                            </div>
-                            <div className="Item-right">
-                                <div className="Item-heading">
-                                    <div className="Item-heading-div">
-                                        Introduction to DevOps&nbsp;
-                                        <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            APR 2022
-                                        </div>
-                                    </div>
-                                    <div className="Item-sub-heading Work-company">
-                                        Coursera, IBM
-                                    </div>
-                                </div>
-                                <div className="Item-desc">
-                                    <ul>
-                                        <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href="https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F">LYZ7CECXR48F</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        { displayCertifications }
                     </div>
                     <div className="Projects">
                         <div className="Heading">PERSONAL PROJECTS</div>
