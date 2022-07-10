@@ -11,19 +11,19 @@ import './Resume.css'
 
 export default function Resume() {
 
-    const firstName = "Mubashir"
-    const lastName = "AhMed"
+    const firstName = "Rehan"
+    const lastName = "Maroof"
     const jobTitle = "Computer Scientist" // Headline 
-    const email = "i180481@nu.edu.pk"
-    const phoneNo = "+92-317-5384929"
+    const email = "i180836@nu.edu.pk"
+    const phoneNo = "+92-317-5781316"
     const address = "House No. 1005, Street 56, G-11/3 Islamabad, 44000, Pakistan"
     const links = [
-        ["GitHub", "https://github.com/mubashirmalik"],
-        ["LinkedIn", "https://linkedin.com/in/mubashir0/"]    
+        ["GitHub", "https://github.com/RehanMaroof"],
+        ["LinkedIn", "https://www.linkedin.com/in/rehan-maroof-482786201/"]    
     ]
-    const skills = ["Golang", "C++", "Solidity", "PHP", "ReactJS", "Git & GitHub"]
-    const interests = ["Dota", "Cricket", "Web3"]
-    const summary = "I am a fast learner and driven individual with the ability to adapt to any situation. I have extensive experience in Web development. I am currently working in Blockchain technology."// About me 
+    const skills = ["Golang", "C++", "Solidity", "Python", "ReactJS", "Git & GitHub"]
+    const interests = ["Football", "Cricket", "Web3"]
+    const summary = "I am a fast learner and driven individual with the ability to adapt to any situation. I have extensive experience in Web development. I am currently working in MERN."// About me 
     const workExperience = [{
         jobTitle: "SOFTWARE ENGINEER",
         duration: "APR 2020 - FEB 2021",
@@ -33,7 +33,7 @@ export default function Resume() {
             "Successfully completed 50+ projects.",
         ],
         proof: {
-            flag: 1, // set 0 if you have no link to redirect to
+            flag: 0, // set 0 if you have no link to redirect to
             text: "mubashirmalick",
             link: "https://www.freelancer.pk/u/mubashirmalick"
         }
@@ -64,7 +64,7 @@ export default function Resume() {
         degree: "BACHELOR OF SCIENCE",
         university: "NATIONAL UNIVERSITY OF COMPUTER & EMERGING SCIENCES, ISLAMABAD",
         year: "2022",
-        courses: ["Blockchain & Cryptocurrencies", "Web Programming", "Cryptography & Data Security", "Parallel & Distributed Computing","Data Mining", "Ethical Hacking Concepts & Practices", "Fundamentals of Malware Analysis"
+        courses: [ "Web Programming", "Cryptography & Data Security", "Digital Image Processing","Data Mining", "Ethical Hacking Concepts & Practices", "Fundamentals of Malware Analysis"
         ]
     }]
     
@@ -76,7 +76,7 @@ export default function Resume() {
                     <div className="Circle-bullet">
                         <div className="Inner-circle"></div>
                     </div>
-                    <StyledLine height="441.094px" marginLeft="6.1px" />
+                    <StyledLine height="360.094px" marginLeft="6.1px" />
                 </div>
                 <div className="Item-right">
                     <div className="Item-heading">{ val.degree }
@@ -273,24 +273,56 @@ export default function Resume() {
                                 <div className="Circle-bullet">
                                     <div className="Inner-circle"></div>
                                 </div>
+                                <StyledLine height="129.094px" marginLeft="6.1px" width="1px" />
+                            </div>
+                            <div className="Item-right">
+                                <div className="Item-heading">
+                                    <div className="Item-heading-div">
+                                    DeLance &nbsp;
+                                    <div className="Item-date" style={{marginLeft: "5px"}}>
+                                            Jan 2022 - Present
+                                        </div>
+                                    </div>
+                                    <div className="Item-sub-heading Work-company">
+                                        Ethereum, ReactJS, Node, Solidity, IPFS
+                                    </div>
+                                </div>
+                                <div className="Item-desc">
+                                    <ul>
+                                        <li>A Blockchain based decentralized freelance system.
+                                            Delance provide feasible amount of fees for both clients and freelancers.
+                                            A decentralized conflict resolution mechanisms.</li>
+                                        <li>GitHub Repo: <a href="https://github.com/ArmishMunir/Delance-app">https://github.com/ArmishMunir/Delance-app</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Item">   
+                            <div className="Item-left">
+                                <div className="Circle-bullet">
+                                    <div className="Inner-circle"></div>
+                                </div>
                                 <StyledLine height="117.094px" marginLeft="6.1px" width="1px" />
                             </div>
                             <div className="Item-right">
                                 <div className="Item-heading">
                                     <div className="Item-heading-div">
-                                    P2CHDWallet (R&D)&nbsp;
-                                    <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            AUG 2021 - JUN 2022
+                                    COVID-19 Classification Using CT Scan Images&nbsp;
+                                        <div className="Item-date" style={{marginLeft: "5px"}}>
+                                            DEC 2021
                                         </div>
                                     </div>
                                     <div className="Item-sub-heading Work-company">
-                                        Ethereum, ReactJS, Node, Infura
+                                        Python, Colab
                                     </div>
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>A Hierarchical Deterministic (HD) Ethereum wallet based on electrum protocol for Bitcoin.</li>
-                                        <li>GitHub Repo: <a href="https://github.com/MubashirMalik/F21-40-R-HDWallet">https://github.com/MubashirMalik/F21-40-R-HDWallet</a></li>
+                                        <li>
+                                        Deep Learning techniques are based on a convolutional neural Network(CNN).
+                                        </li>
+                                        <li>Efficient GAN-based Chest Radiographs augmentation to diagnose coronavirus disease pneumonia.
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -305,49 +337,22 @@ export default function Resume() {
                             <div className="Item-right">
                                 <div className="Item-heading">
                                     <div className="Item-heading-div">
-                                    Smart Shares&nbsp;
+                                    School Management System&nbsp;
                                         <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            DEC 2021
+                                            AUG 2021 - DEC 2021
                                         </div>
                                     </div>
                                     <div className="Item-sub-heading Work-company">
-                                        Solidity, ReactJS, NodeJS, Ganache, Truffle, MetaMask
+                                        HTML5, CSS3, JavaScript, PHP, MYSQL
                                     </div>
                                 </div>
                                 <div className="Item-desc">
                                     <ul>
-                                        <li>
-                                            DApp that allows buying and selling shares of Assets using Smart Contract. An asset can be any thing; from a company shares, a car to a NFT.
-                                        </li>
-                                        <li>Ensures shares being sold and bought are the actual shares on the chain and not fraud by dealers. Gas fee for buying shares is lower as compared to the real life cut of dealers along with ease of use and anonymity.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="Item">   
-                            <div className="Item-left">
-                                <div className="Circle-bullet">
-                                    <div className="Inner-circle"></div>
-                                </div>
-                                <StyledLine height="122.094px" marginLeft="6.1px" width="1px" />
-                            </div>
-                            <div className="Item-right">
-                                <div className="Item-heading">
-                                    <div className="Item-heading-div">
-                                    NetArchives&nbsp;
-                                        <div className="Item-date" style={{marginLeft: "5px"}}>
-                                            JUN 2019 - FEB 2022
-                                        </div>
-                                    </div>
-                                    <div className="Item-sub-heading Work-company">
-                                        HTML5, CSS3, JavaScript, PHP, MYSQL, GSC
-                                    </div>
-                                </div>
-                                <div className="Item-desc">
-                                    <ul>
-                                        <li>An educational website aiming to help students prepare for their entry tests and descriptive exams for various admissions in reputable institutes.</li>
-                                        <li>Ranked No.1 on Google for various search terms.</li>
+                                        <li>Hamarey Bachchey is a NGO with the goal to reform education for children.</li>
+                                        <li>They offer weekly
+classes for children below the age of 15.</li>
+<li>A complete system for student after signing up stuent can register courses.</li><li>Each students’ personal information will be saved, including photos which may need to be updated
+every year.</li>
                                     </ul>
                                 </div>
                             </div>
