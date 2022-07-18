@@ -42,22 +42,22 @@ export default function Resume() {
         title: "WEB DEVELOPMENT W/ GOOGLE’S GO (GOLANG) PROGRAMMING LANGUAGE",
         duration: "JUL 2022",
         orgranization: "Udemy",
-        credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
-        verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
+       // credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
+        //verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
     },
     {
         title: "LEARN HOW TO CODE: GOOGLE'S GO (GOLANG) PROGRAMMING LANGUAGE",
         duration: "JUN 2022",
         orgranization: "Udemy",
-        credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
-        verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
+        //credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
+       // verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
     },
     {
         title: "INTRODUCTION TO DEVOPS",
         duration: "APR 2022",
         orgranization: "Coursera, IBM",
-        credentialID: "LYZ7CECXR48F",
-        verificationLink: "https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F",
+        //credentialID: "LYZ7CECXR48F",
+        //verificationLink: "https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F",
     }]
     // If you want to include more than one degree, you can remove courses section to create space
     const education = [{
