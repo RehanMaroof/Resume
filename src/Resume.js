@@ -109,7 +109,7 @@ export default function Resume() {
                     </div>
                     <div className="Item-desc">
                         <ul>
-                            <li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href={val.verificationLink }>{val.credentialID}</a></li>
+                            //<li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href={val.verificationLink }>{val.credentialID}</a></li>
                         </ul>
                     </div>
                 </div>
