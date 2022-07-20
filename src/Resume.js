@@ -39,9 +39,9 @@ export default function Resume() {
         }
     }]
     const certifications = [{
-        title: "WEB DEVELOPMENT W/ GOOGLE’S GO (GOLANG) PROGRAMMING LANGUAGE",
+        title: "React FrontEnd Web Development",
         duration: "JUL 2022",
-        orgranization: "Udemy",
+        orgranization: "Scrimba",
        // credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
         //verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
     },
@@ -52,13 +52,13 @@ export default function Resume() {
         //credentialID: "UC-15104a74-9b45-4422-b3dd-40e0fa9c6433",
        // verificationLink: "https://www.udemy.com/certificate/UC-15104a74-9b45-4422-b3dd-40e0fa9c6433/",
     },
-    {
+   /* {
         title: "INTRODUCTION TO DEVOPS",
         duration: "APR 2022",
         orgranization: "Coursera, IBM",
         //credentialID: "LYZ7CECXR48F",
         //verificationLink: "https://www.coursera.org/account/accomplishments/verify/LYZ7CECXR48F",
-    }]
+    }*/]
     // If you want to include more than one degree, you can remove courses section to create space
     const education = [{
         degree: "BACHELOR OF SCIENCE",
@@ -98,7 +98,7 @@ export default function Resume() {
                     <div className="Circle-bullet">
                         <div className="Inner-circle"></div>
                     </div>
-                    <StyledLine height="77.094px" marginLeft="6.1px" width="1px" />
+                    <StyledLine height="40.094px" marginLeft="6.1px" width="1px" />
                 </div>
                 <div className="Item-right">
                     <div className="Item-heading">
@@ -107,11 +107,7 @@ export default function Resume() {
                         </div>
                         <div className="Item-sub-heading Work-company">{ val.orgranization }</div>
                     </div>
-                    <div className="Item-desc">
-                        <ul>
-                            //<li>Verify using Credential ID: <a target="_blank" rel="noreferrer" href={val.verificationLink }>{val.credentialID}</a></li>
-                        </ul>
-                    </div>
+                   
                 </div>
             </div>
         );
